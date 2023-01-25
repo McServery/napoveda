@@ -6,6 +6,11 @@
 * Seznam hráčů hlasujících pro server za posledních 30 dní
 * Aktuální počet hlasů
 * Status a další informace serveru (ip adresa, port, motd, verze, mód, hráči/sloty)
+* Detailní statistiky - https://mcservery.eu/stats
+
+{% hint style="danger" %}
+Nikomu nesdělujte ani neposílejte svůj API klíč. V případě vyzrazení vygenerujte nový – původní přestane být funkční.
+{% endhint %}
 
 ## Jak API používat?
 
@@ -13,23 +18,11 @@
 
 Pro používání api je nutné vygenerovat api key který vám zajistí přístup k informacím pro server se kterým je klíč navázaný. Klíč vygenerujete po přihlášení k účtu který je spojený s daným serverem. Je nutné být přihlášený na [http://mcservery.eu/login.php](http://mcservery.eu/login.php)
 
-Pro vygenerování klíče si zobrazte seznam vašich serverů
+Pro vygenerování klíče si po přihlášení k Vašemu zobrazte detail Vámi přidaného serveru.&#x20;
 
-![https://github.com/McServery/API-Dokumentace/raw/master/img/api1.JPG](https://github.com/McServery/API-Dokumentace/raw/master/img/api1.JPG)
+Pod popisem serveru naleznete box s názvem „Upravit server“. Zde stačí kliknout na tlačítko vygenerovat api key.
 
-Otevřete detail požadovaného serveru
-
-![https://github.com/McServery/API-Dokumentace/raw/master/img/api2.jpg?raw=true](https://github.com/McServery/API-Dokumentace/raw/master/img/api2.jpg?raw=true)
-
-Vygenerujte api klíč
-
-![https://github.com/McServery/API-Dokumentace/raw/master/img/api3.JPG](https://github.com/McServery/API-Dokumentace/raw/master/img/api3.JPG)
-
-Zkopírujte svůj api klíč
-
-![https://github.com/McServery/API-Dokumentace/raw/master/img/api4.JPG](https://github.com/McServery/API-Dokumentace/raw/master/img/api4.JPG)
-
-****
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Základní informace o serveru
 
