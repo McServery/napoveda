@@ -2,6 +2,12 @@
 
 Pro využívání všech funkcí server listu, je nutné mít založený účet.&#x20;
 
+{% hint style="info" %}
+Stav svého účtu můžeš zkontrolovat v nastavení svého účtu:
+
+[https://mcservery.eu/account-settings.php](https://mcservery.eu/account-settings.php)
+{% endhint %}
+
 ### Co registrace uživatelům umožňuje?&#x20;
 
 * Přidání vlastního serveru.
@@ -25,7 +31,7 @@ Nedorazil ti ověřovací email? Pokud ti email pro ověření nedorazí do něk
 Pokud ani tam nebyl email doručen, kontaktujte prosím podporu na adrese: info@mcservery.eu nebo na našem Discord serveru.
 
 {% hint style="danger" %}
-Pokud účet není ověřen může dojít k jeho odstranění!
+Pokud účet není ověřen dojde po 30 dnech od registrace k trvalému odstranění účtu.
 {% endhint %}
 
 ## Zapomenuté heslo
@@ -44,7 +50,7 @@ Při propojení účtů se bude na tvém profilu na mcservery.eu zobrazovat tvá
 
 ### Jak ověřit Discord účet?
 
-Účet se ověří pomocí této stránky - [https://mcservery.eu/dsv.php](https://mcservery.eu/dsv.php) kde postačí vyplnit uživatelské jméno a tag.
+Účet se ověří pomocí této stránky - [https://mcservery.eu/account-discord.php](https://mcservery.eu/account-discord.php) kde postačí vyplnit uživatelské jméno a tag.
 
 Po vyplnění stačí zobrazený příkaz vložit do kanálu **#ověření** na našem Discord serveru. Účet se tak propojí s webem a ty získáš odpovídající role na serveru.
 
