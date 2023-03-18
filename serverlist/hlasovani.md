@@ -36,4 +36,4 @@ Pokud server nemá nastavené odměny za hlasování nick se nevyplňuje.
 
 **Něco nám uniklo?**
 
-Nebojte se! Stačí poslat e-mail. Rádi poradíme na [info@mcservery.eu](mailto:info@mcservery.eu) ✌️
+Nebojte se! Rádi poradíme na [Discordu](https://discord.mcservery.eu) nebo [info@mcservery.eu](mailto:info@mcservery.eu) ✌️

@@ -70,3 +70,6 @@ Získáš roli podle toho zda máš přidaný server svůj Minecraft server, neb
 
 &#x20;
 
+**Něco nám uniklo?**
+
+Nebojte se! Rádi poradíme na [Discordu](https://discord.mcservery.eu) nebo [info@mcservery.eu](mailto:info@mcservery.eu) ✌️
