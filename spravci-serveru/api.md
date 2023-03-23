@@ -22,7 +22,7 @@ Pro vygenerování klíče si po přihlášení k Vašemu zobrazte detail Vámi 
 
 Pod popisem serveru naleznete box s názvem „Upravit server“. Zde stačí kliknout na tlačítko vygenerovat api key.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Základní informace o serveru
 

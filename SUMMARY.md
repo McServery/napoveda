@@ -12,7 +12,8 @@
 * [Přidání nového serveru](spravci-serveru/pr-idani-noveho-serveru.md)
 * [Odměny za hlasování (Votifier)](spravci-serveru/odme-ny-za-hlasovani-votifier.md)
 * [API](spravci-serveru/api.md)
-* [Zpětný odkaz](spravci-serveru/zpe-tny-odkaz.md)
+* [Zpětný odkaz](spravci-serveru/zpe-tny-odkaz/README.md)
+  * [Ověřený server](spravci-serveru/zpe-tny-odkaz/overeny-server.md)
 
 ## ⚙ Nastavení serveru
 
