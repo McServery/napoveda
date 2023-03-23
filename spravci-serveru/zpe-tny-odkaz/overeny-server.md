@@ -20,7 +20,13 @@ Postupujte dle [tohoto návodu](https://help.mcservery.eu/spravci-serveru/zpe-tn
 V případě že zpětný odkaz po ověření odstraníte, bude vám automaticky odebrán i odznak "Ověřeno".
 {% endhint %}
 
+### Co znamená když server čeká na ověření?
 
+Pokud je u vašeho serveru vyplněn odkaz na web vašeho serveru, ale nebyl na Vašich stránkách nalezen zpětný odkaz, bude se zobrazovat v nastavení šedý odznak že doména čeká na ověření.
+
+Pokud na vaše stránky umístíte zpětný odkaz, a systém ho zachytí zobrazí se u vašeho serveru do 24 hodin od přidání zpětného odkazu potvrzení o tom že jsme server ověřili.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Server s vyplněným odkazem na web, před ověřením zpětného odkazu.</p></figcaption></figure>
 
 ## Související články
 
