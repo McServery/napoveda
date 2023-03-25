@@ -14,6 +14,7 @@
 * [API](spravci-serveru/api.md)
 * [Zpětný odkaz](spravci-serveru/zpe-tny-odkaz/README.md)
   * [Ověřený server](spravci-serveru/zpe-tny-odkaz/overeny-server.md)
+* [Převod vlastnictví serveru](spravci-serveru/prevod-vlastnictvi-serveru.md)
 
 ## ⚙ Nastavení serveru
 
