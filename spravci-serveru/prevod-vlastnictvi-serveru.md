@@ -21,6 +21,12 @@ Rovněž je možné použít převod serveru, pokud například změnil majitele
 
 K převodu serveru není nutná spolupráce uživatele, který server na server list přidal. Je však nutné mít přístup na FTP nebo mít jinou možnost, jak v administraci Vašeho hostingu změnit konfigurační soubor serveru.
 
+{% hint style="warning" %}
+V popisu serveru nesmí být v momentě ověření přítomen žádný jiný text ani znaky než samotný kód.&#x20;
+
+Po ověření serveru nezapomeňte kód odstranit z popisu serveru - mohl by být znovu použit k převodu jiným uživatelem.
+{% endhint %}
+
 1. Přihlaste se ke svému účtu na mcservery.eu a přejděte na detail serveru kde chcete nárokovat vlastnictví
 2. V panelu na pravé straně se nachází informace o serveru (verze, počet hlasů a pod..) klikněte na vlaječku.  <img src="../.gitbook/assets/image.png" alt="" data-size="line">
 3. Otevřete soubor <mark style="color:red;">`server.properties`</mark>
