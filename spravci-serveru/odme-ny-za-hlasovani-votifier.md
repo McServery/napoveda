@@ -41,7 +41,7 @@ Po instalaci SuperbVote si nastavte jaké odměny má hráč dostat za hlasován
 
 Pokud jste vše nakonfigurovali správně mělo by na stránce vašeho serveru být pole pro vyplnění nicku který má hlasující hráč na serveru. Nick vyplníte a pak už jen stačí hlas odeslat.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Pro propojení je nutné vyplnit public key a port</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Pro propojení je nutné vyplnit public key a port</p></figcaption></figure>
 
 ## FAQs
 
