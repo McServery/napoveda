@@ -41,7 +41,7 @@ Než se projeví změna DNS záznamů může to trvat až 1 hodinu, nebo i více
 [pr-idani-noveho-serveru.md](../spravci-serveru/pr-idani-noveho-serveru.md)
 {% endcontent-ref %}
 
-****
+
 
 **Něco nám uniklo?**
 

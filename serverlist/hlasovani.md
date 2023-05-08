@@ -32,7 +32,7 @@ Pokud server nemá nastavené odměny za hlasování nick se nevyplňuje.
 [odme-ny-za-hlasovani-votifier.md](../spravci-serveru/odme-ny-za-hlasovani-votifier.md)
 {% endcontent-ref %}
 
-****
+
 
 **Něco nám uniklo?**
 

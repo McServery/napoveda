@@ -5,7 +5,8 @@
 ## 📓 Jak používat mcservery.eu <a href="#serverlist" id="serverlist"></a>
 
 * [Hlasování](serverlist/hlasovani.md)
-* [Uživatelské účty](serverlist/uzivatelske-ucty.md)
+* [Uživatelské účty](serverlist/uzivatelske-ucty/README.md)
+  * [Propojení účtu s Discordem](serverlist/uzivatelske-ucty/propojeni-uctu-s-discordem.md)
 
 ## 🛠 Správci serverů
 

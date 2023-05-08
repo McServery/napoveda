@@ -67,7 +67,7 @@ Pokud server nesplňuje podmínky pro zveřejnění na server listu nebude přid
 [odme-ny-za-hlasovani-votifier.md](odme-ny-za-hlasovani-votifier.md)
 {% endcontent-ref %}
 
-****
+
 
 **Něco nám uniklo?**
 

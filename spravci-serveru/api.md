@@ -1,3 +1,9 @@
+---
+description: >-
+  Umožňuje komunikaci a výměnu dat. S rozhraním API můžete komunikovat
+  prostřednictvím požadavků HTTP z libovolného jazyka.
+---
+
 # API
 
 ## Co API umí?
@@ -14,7 +20,7 @@ Nikomu nesdělujte ani neposílejte svůj API klíč. V případě vyzrazení vy
 
 ## Jak API používat?
 
-#### **Získání klíče**
+### **Získání klíče**
 
 Pro používání api je nutné vygenerovat api key který vám zajistí přístup k informacím pro server se kterým je klíč navázaný. Klíč vygenerujete po přihlášení k účtu který je spojený s daným serverem. Je nutné být přihlášený na [http://mcservery.eu/login.php](http://mcservery.eu/login.php)
 
@@ -24,47 +30,34 @@ Pod popisem serveru naleznete box s názvem „Upravit server“. Zde stačí kl
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Základní informace o serveru
+### Rate limit
 
-{% swagger method="get" path="/?api_key=" baseUrl="http://api.mcservery.eu" summary="Informace o serveru" %}
-{% swagger-description %}
+Rate limit je maximální počet API volání, které aplikace nebo uživatel může v určitém časovém období provést. Pokud je tento limit překročen, dojde k zablokování požadavků.
 
-{% endswagger-description %}
+#### Proč limitujeme počty požadavků?
 
-{% swagger-parameter in="query" name="api_key" required="true" %}
-Klíč pro daný server
-{% endswagger-parameter %}
+Je to běžnou praxí pro API a limity jsou zavedeny z několika důvodů:
 
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{ 
-    "Name": "API Testovací server", "Description": "Testovací záznam pro zkoušku API", "Adress": "mc.hypixel.net", "Port": "25565", "Web": "http://api.mcservery.eu", "Discord": "", "Tag1": "", "Tag2": "", "Tag3": "", "Votes": "1", "VRD": "2020-08-25 15:39:03"
-}
-```
+* **Pomáhají chránit API proti zneužití nebo nesprávnému použití.** Například útočník by mohl zaplavit API požadavky v pokusu o přetížení serveru.
+* **Limity pomáhají zajistit, že každý má spravedlivý přístup k API.** Pokud jedna osoba nebo aplikace provede nadměrný počet požadavků, mohlo by to zpomalit API pro všechny ostatní.
 
-_VRD = Votes Reset Date - Hlasy se resetují jednou za 30 dní od přidání serveru, vždy při resetu se nastaví aktuální čas kdy byl reset proveden_
-{% endswagger-response %}
+#### Jaké limity jsou nastaveny?
 
-{% swagger-response status="400: Bad Request" description="Je vyžadován API key" %}
-```javascript
-{
-    'code'    => 1,
-    'message' => 'Je vyžadován API key, dokumentaci naleznete na: https://github.com/McServery/API-Dokumentace'
-}
-```
-{% endswagger-response %}
+Maximum je **10 požadavků** během **10 vteřin.**
 
-{% swagger-response status="401: Unauthorized" description="API key je neplatný" %}
-```javascript
-{   
-    'code'    => 2,
-    'message' => 'API key je neplatný'
-}
-```
-{% endswagger-response %}
-{% endswagger %}
+#### Co se stane pokud limit překročím?
 
-## Hlasování
+Dojde k blokaci IP adresy ze které jsou požadavky odesílaný. **Blokace trvá 10 vteřin.**
+
+Pokud narazíte na chybu **429** nebo **1015**, znamená to, že jste v krátkém časovém období provedli příliš mnoho požadavků a API odmítá plnit další požadavky, dokud neuplyne stanovené časové období.
+
+**Stejné limity se vztahují i na přístup na web, tedy ne jen na API požadavky jako takové.**
+
+## API reference
+
+### Základní informace o serveru
+
+### Hlasování
 
 {% swagger method="get" path="/players/?api_key=" baseUrl="http://api.mcservery.eu" summary="Hlasující hráči za posledních 30 dní" %}
 {% swagger-description %}
@@ -83,7 +76,7 @@ Klíč pro daný server
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400: Bad Request" description="Je vyžadován API key" %}
+{% swagger-response status="200: OK" description="Code 1: Je vyžadován API key" %}
 ```javascript
 {
     'code'    => 1,
@@ -92,13 +85,17 @@ Klíč pro daný server
 ```
 {% endswagger-response %}
 
-{% swagger-response status="401: Unauthorized" description="API key je neplatný" %}
+{% swagger-response status="200: OK" description="Code 2: API key je neplatný" %}
 ```javascript
 {
     'code'    => 2,
     'message' => 'API key je neplatný'
 }
 ```
+{% endswagger-response %}
+
+{% swagger-response status="429: Too Many Requests" description="Rate limit" %}
+
 {% endswagger-response %}
 {% endswagger %}
 
@@ -119,7 +116,7 @@ Klíč pro daný server
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400: Bad Request" description="Je vyžadován API key" %}
+{% swagger-response status="200: OK" description="Code 1: Je vyžadován API key" %}
 ```javascript
 {
     'code'    => 1,
@@ -128,7 +125,7 @@ Klíč pro daný server
 ```
 {% endswagger-response %}
 
-{% swagger-response status="401: Unauthorized" description="API key je neplatný" %}
+{% swagger-response status="200: OK" description="Code 2: API key je neplatný" %}
 ```javascript
 {
     'code'    => 2,
@@ -136,9 +133,17 @@ Klíč pro daný server
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="429: Too Many Requests" description="Rate limit" %}
+
+{% endswagger-response %}
 {% endswagger %}
 
-## Status serveru
+{% embed url="https://mcservery.eu/blog/mcservery-api-zebricek-hlasujicich-pro-vas-server/" %}
+Pomocí endpointu /players/ lze vytvořit žebříček hlasujících pro Váš server.
+{% endembed %}
+
+### Status serveru
 
 {% swagger method="get" path="/status/?api_key=" baseUrl="http://api.mcservery.eu" summary="Status serveru" %}
 {% swagger-description %}
@@ -150,10 +155,10 @@ Klíč pro daný server
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Zobrazí aktuální status serveru" %}
-****
+
 {% endswagger-response %}
 
-{% swagger-response status="200: OK" description="Server offline" %}
+{% swagger-response status="200: OK" description="Code 3: Server offline" %}
 ```javascript
 {
     'code' => 3,
@@ -162,7 +167,16 @@ Klíč pro daný server
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400: Bad Request" description="Je vyžadován API key" %}
+{% swagger-response status="200: OK" description="Code 2: API key je neplatný" %}
+```javascript
+{
+    'code' => 2,
+    'message' => 'API key je neplatný'
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="200: OK" description="Code 1: Je vyžadován API key" %}
 ```javascript
 {
     'code' => 1, 
@@ -171,17 +185,12 @@ Klíč pro daný server
 ```
 {% endswagger-response %}
 
-{% swagger-response status="401: Unauthorized" description="API key je neplatný" %}
-```javascript
-{
-    'code' => 2,
-    'message' => 'API key je neplatný'
-}
-```
+{% swagger-response status="429: Too Many Requests" description="Rate limit" %}
+
 {% endswagger-response %}
 {% endswagger %}
 
-### ****
+
 
 ## Související články
 
@@ -189,7 +198,7 @@ Klíč pro daný server
 [pr-idani-noveho-serveru.md](pr-idani-noveho-serveru.md)
 {% endcontent-ref %}
 
-****
+
 
 **Něco nám uniklo?**
 

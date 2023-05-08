@@ -10,4 +10,4 @@ Pokud máte skvělý server, pak je snadné přimět hráče aby zůstali. Nejt�
 
 **Přečti si celý článek o tom jak propagovat svůj Minecraft server na našem blogu.**
 
-{% embed url="https://blog.mcservery.eu/jak-propagovat-vas-minecraft-server-a-ziskat-vice-hracu/" %}
+{% embed url="https://mcservery.eu/blog/jak-propagovat-vas-minecraft-server-a-prilakat-vice-hracu/index.html" %}

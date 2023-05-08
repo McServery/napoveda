@@ -59,7 +59,7 @@ Odměna za hlasování pro váš server motivuje hráče pravidelně hlasovat a 
 [hlasovani.md](../serverlist/hlasovani.md)
 {% endcontent-ref %}
 
-****
+
 
 **Něco nám uniklo?**
 
